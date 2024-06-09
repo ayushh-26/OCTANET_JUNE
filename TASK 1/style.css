@@ -168,8 +168,9 @@ header {
 }
 
 .special-card img {
-    width: fit-content;
-    height: 210px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -435,13 +436,25 @@ footer {
         padding: 20px;
     }
 
-    .header-image {
-        max-width: 100%;
-        margin-top: 20px;
+    .brands-logos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .brands-logos img {
+        margin-bottom: 20px;
+        width: 50%;
+        height: auto;
+    }
+
+    .special-grid {
+        flex-direction: column;
+        align-items: center;
     }
 
     .special-card {
         width: 90%;
+        margin-bottom: 20px;
     }
 
     .banners {
@@ -451,24 +464,16 @@ footer {
 
     .banner-card {
         width: 90%;
+        margin-bottom: 20px;
     }
 
     .reviews-grid {
         flex-direction: column;
         align-items: center;
     }
-
-    .review-card {
-        max-width: 90%;
-    }
 }
 
-@media (max-width: 480px) {
-    .navlinks {
-        width: 100%;
-        right: 0;
-    }
-
+@media (max-width: 576px) {
     .header-content h1 {
         font-size: 28px;
     }
@@ -477,11 +482,65 @@ footer {
         font-size: 16px;
     }
 
+    .section__header {
+        font-size: 24px;
+    }
+
     .special-card {
         width: 100%;
     }
 
+    .explore-content h3 {
+        font-size: 28px;
+    }
+
+    .explore-content p {
+        font-size: 16px;
+    }
+
     .banner-card {
         width: 100%;
+    }
+
+    .review-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .header-content h1 {
+        font-size: 24px;
+    }
+
+    .header-content p {
+        font-size: 14px;
+    }
+
+    .section__header {
+        font-size: 20px;
+    }
+
+    .brands-logos img {
+        width: 70%;
+    }
+
+    .special-card img {
+        max-width: 100px;
+    }
+
+    .explore-content h3 {
+        font-size: 24px;
+    }
+
+    .explore-content p {
+        font-size: 14px;
+    }
+
+    .banner-card h4 {
+        font-size: 20px;
+    }
+
+    .banner-card p {
+        font-size: 14px;
     }
 }
