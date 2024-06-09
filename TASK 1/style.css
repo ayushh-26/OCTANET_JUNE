@@ -506,40 +506,23 @@ footer {
     }
 }
 
-@media (max-width: 375px) {
-    .header-content h1 {
-        font-size: 24px;
+@media (max-width: 430px) and (max-height: 940px) {
+    .special-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
     }
 
-    .header-content p {
-        font-size: 14px;
-    }
-
-    .section__header {
-        font-size: 20px;
-    }
-
-    .brands-logos img {
-        width: 70%;
+    .special-card {
+        width: 90%;
+        margin-bottom: 20px;
     }
 
     .special-card img {
-        max-width: 100px;
-    }
-
-    .explore-content h3 {
-        font-size: 24px;
-    }
-
-    .explore-content p {
-        font-size: 14px;
-    }
-
-    .banner-card h4 {
-        font-size: 20px;
-    }
-
-    .banner-card p {
-        font-size: 14px;
-    }
+        width: 100%;
+        height: auto;
+        max-height: 160px; 
+        object-fit: contain; 
+}
 }
