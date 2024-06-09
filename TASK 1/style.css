@@ -168,9 +168,8 @@ header {
 }
 
 .special-card img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
+    width: fit-content;
+    height: 210px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
